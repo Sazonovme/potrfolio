@@ -446,9 +446,24 @@ template {
 }
 
 .about {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #f6f6f6;
   padding: 120px 0 110px 0;
+}
+
+.about__text {
+  text-align: center;
+  width: 300px;
+  line-height: 2;
+}
+
+.about__tittle {
+  margin-bottom: 50px;
 }
 
 .skills {
